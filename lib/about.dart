@@ -31,7 +31,7 @@ class About extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(bottom: 10),
-              child: Row(
+              child: Wrap(
                 children: <Widget>[
                   Text(
                     '*:本段文本源自 ',
@@ -80,7 +80,8 @@ class About extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
+            Wrap(
+              alignment: WrapAlignment.start,
               children: <Widget>[
                 Text(
                   '我是 ',
