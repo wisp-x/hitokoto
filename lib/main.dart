@@ -48,7 +48,10 @@ class _MyHomePageState extends State<MyHomePage>
     _getData();
     _tabController = TabController(length: tabs.length, vsync: this);
     _tabController.addListener(() {
-      index = _tabController.index;
+      if(_tabController.indexIsChanging) {
+        index = _tabController.index;
+        _getData();
+      }
     });
   }
 
