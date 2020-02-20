@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage>
           backgroundColor: Colors.grey[200],
           valueColor: AlwaysStoppedAnimation(Colors.blue),
         ) : Icon(Icons.autorenew),
-        onPressed: _getData,
+        onPressed: loading ? null : _getData,
       ),
     );
   }
