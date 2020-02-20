@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:hitokoto/about.dart';
 
 void main() => runApp(MyApp());
 
@@ -60,8 +61,18 @@ class _MyHomePageState extends State<MyHomePage>
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.error_outline),
+            onPressed: () {
+              Navigator.push(
+                context,
+                new MaterialPageRoute(builder: (context) => About()),
+              );
+            },
+          )
+        ],
         bottom: TabBar(
-          //生成Tab菜单
           controller: _tabController,
           isScrollable: true,
           tabs: tabs.map((e) => Tab(text: e['val'])).toList(),
@@ -82,11 +93,11 @@ class _MyHomePageState extends State<MyHomePage>
     return Container(
       alignment: Alignment.center,
       child: ListView(
+        padding: EdgeInsets.all(20),
         physics: BouncingScrollPhysics(),
         children: <Widget>[
           Container(
             height: MediaQuery.of(context).size.height - 200,
-            padding: EdgeInsets.all(20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
