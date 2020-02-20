@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage>
         physics: BouncingScrollPhysics(),
         children: <Widget>[
           Container(
-            height: MediaQuery.of(context).size.height - 200,
+            height: MediaQuery.of(context).size.height - 160,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage>
                   text,
                   style: TextStyle(
                     fontSize: 30,
-                    fontFamily: "ZhiMangXing",
+                    fontFamily: "MaShanZheng",
                     color: Colors.black87,
                     letterSpacing: 3,
                   ),
