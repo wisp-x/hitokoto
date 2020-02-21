@@ -36,7 +36,12 @@ class _MyHomePageState extends State<MyHomePage>
     {"key": "d", "val": "小说"},
     {"key": "e", "val": "原创"},
     {"key": "f", "val": "网络"},
-    {"key": "g", "val": "其他"}
+    {"key": "g", "val": "其他"},
+    {"key": "h", "val": "影视"},
+    {"key": "i", "val": "诗词"},
+    {"key": "j", "val": "网易云"},
+    {"key": "k", "val": "哲学"},
+    {"key": "l", "val": "抖机灵"},
   ];
   String text = '请稍等...';
   String from = '';
